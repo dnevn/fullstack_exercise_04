@@ -10,7 +10,7 @@
 <body>
     <main>
         <h2>Form dang nhap + 2FA</h2>
-        <form action="/auth">
+        <form action="#" method="post">
             <div>
                 <label for="lb_email">Email: </label>
                 <input type="email" name="email" id="lb_email">
@@ -21,10 +21,10 @@
             </div>
             <div>
                 <label for="lb_otp">Ma OTP: </label>
-                <input type="tel" name="" id="lb_otp" maxlength="6">
+                <input type="tel" name="otp" id="lb_otp" maxlength="6">
             </div>
             <div>
-                <button type="reset">Dang nhap</button>
+                <button type="submit">Dang nhap</button>
                 <button type="button">Huy</button>
             </div>
         </form>

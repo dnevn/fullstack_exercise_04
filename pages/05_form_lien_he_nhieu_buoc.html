@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>05 Form Contact</title>
+    <style>
+        /* Defaut */
+        .contact_options {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        /* Checked */
+        #enable_contact:checked~.contact_options {
+            pointer-events: auto;
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
     <main>
         <h2>Form lien he nhieu buoc</h2>
-        <form action="/contact">
+        <form action="#" method="post">
             <fieldset>
                 <legend>Thong tin ca nhan</legend>
                 <div>
@@ -30,7 +43,7 @@
                 <legend>Thong tin yeu cau</legend>
                 <div>
                     <label for="request_type">Loai yeu cau: </label>
-                    <select name="request_type" id="">
+                    <select id="request_type">
                         <option value="ho_tro_ky_thuat">Ho tro ki thuat</option>
                         <option value="thong_tin_san_pham">Thong tin san pham</option>
                         <option value="bao_hanh">Bao hanh</option>
@@ -44,14 +57,10 @@
             </fieldset>
             <fieldset>
                 <legend>Thong tin bo sung</legend>
-                <div>
-                    <label for="">
-                        <input type="checkbox">
-                        Nhan email khuyen mai
-                    </label>
-                </div>
-                <div>
-                    <label for="">Cach lien he: </label>
+                <input type="checkbox" id="enable_contact">
+                <label for="enable_contact">Nhan email khuyen mai</label>
+                <div class="contact_options">
+                    <label>Cach lien he: </label>
                     <label for="contact_email">
                         <input type="radio" name="contact" id="contact_email" value="email">
                         Email
