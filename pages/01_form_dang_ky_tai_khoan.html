@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 Form Sign-up</title>
+</head>
+
+<body>
+    <main>
+        <h2>Form Dang Ky Tai Khoan</h2>
+        <form action="/signup">
+            <div>
+                <label for="lb_fullname">Ho va ten: </label>
+                <input type="text" id="lb_fullname" name="fullname">
+            </div>
+            <div>
+                <label for="lb_email">Email: </label>
+                <input type="email" id="lb_email" name="email" required>
+            </div>
+            <div>
+                <label for="lb_password">Mat khau: </label>
+                <input type="password" id="lb_password" name="password" required>
+            </div>
+            <div>
+                <label for="lb_birthday">Ngay sinh: </label>
+                <input type="date" id="lb_birthday" name="birthday">
+            </div>
+            <div>
+                <label for="">Gioi tinh: </label>
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Nam
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Nu
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Khac
+                </label>
+            </div>
+            <div>
+                <label for="lb_describe">Mo ta ban than: </label><br>
+                <textarea id="lb_describe" name="describe" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <button type="submit">Dang ky</button>
+                <button type="reset">Xoa</button>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

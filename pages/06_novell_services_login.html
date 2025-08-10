@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 Novell Service Login</title>
+    <style>
+        * {
+            font-family: serif;
+        }
+
+        caption {
+            padding-bottom: 5%;
+            font-size: larger;
+        }
+
+        .lb_block {
+            display: block;
+        }
+
+        .tr_padding {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="/login" method="post">
+            <table>
+                <caption>Novell Service Login</caption>
+                <tr>
+                    <td>
+                        <label for="lb_username">Username: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="lb_username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lb_password">Password: </label>
+                    </td>
+                    <td>
+                        <input type="password" id="lb_password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lb_city">City of <br>Employment: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="lb_city">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lb_server">Web server: </label>
+                    </td>
+                    <td>
+                        <select name="server" id="lb_server">
+                            <option value="choose">-- Chose a server --</option>
+                            <option value="apache">Apache</option>
+                            <option value="microsoft">Microsoft</option>
+                            <option value="google"> Google</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>
+                        <label>Please specify <br>your role: </label>
+                    </td>
+
+                    <td>
+                        <div class="tr_padding">
+                            <label class="lb_block">
+                                <input type="radio" name="role" value="admin">
+                                Admin
+                            </label>
+                            <label class="lb_block">
+                                <input type="radio" name="role" value="engineer">
+                                Enginner
+                            </label>
+                            <label class="lb_block">
+                                <input type="radio" name="role" value="manager">
+                                Manager
+                            </label>
+                            <label class="lb_block">
+                                <input type="radio" name="role" value="guest">
+                                Guest
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <label>Single Sign-on <br>to the following: </label>
+                    </td>
+                    <td>
+                        <div class="tr_padding">
+                            <label class="lb_block">
+                                <input type="checkbox" name="follow" value="mail">
+                                Mail
+                            </label>
+                            <label class="lb_block">
+                                <input type="checkbox" name="follow" value="payroll">
+                                Payroll
+                            </label>
+                            <label class="lb_block">
+                                <input type="checkbox" namr="follow" value="self_service">
+                                Self-service
+                            </label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Login</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+</body>
+
+</html>

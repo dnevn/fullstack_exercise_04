@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 Form Login and 2FA</title>
+</head>
+
+<body>
+    <main>
+        <h2>Form dang nhap + 2FA</h2>
+        <form action="/auth">
+            <div>
+                <label for="lb_email">Email: </label>
+                <input type="email" name="email" id="lb_email">
+            </div>
+            <div>
+                <label for="lb_password">Password: </label>
+                <input type="password" name="password" id="lb_password">
+            </div>
+            <div>
+                <label for="lb_otp">Ma OTP: </label>
+                <input type="tel" name="" id="lb_otp" maxlength="6">
+            </div>
+            <div>
+                <button type="reset">Dang nhap</button>
+                <button type="button">Huy</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

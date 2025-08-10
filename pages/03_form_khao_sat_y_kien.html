@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 Form Survey</title>
+</head>
+
+<body>
+    <main>
+        <h2>Form khao sat y kien</h2>
+        <form action="/survey">
+            <div>
+                <label for="lb_fullname">Ho ten: </label>
+                <input type="text" name="fullname" id="lb_fullname">
+            </div>
+            <div>
+                <label for="lb_satisfaction">Muc do hai long: </label>
+                <input type="range" name="satisfaction" id="lb_satisfaction" min="0" max="5" step="1">
+            </div>
+            <div>
+                <label for="lb_contact">Thoi gian lien he: </label>
+                <input type="time" name="contact" id="lb_contact">
+            </div>
+            <div>
+                <label for="lb_chanel">Kenh thong tin</label>
+                <label>
+                    <input type="checkbox" name="chanel" value="facebook">
+                    Facebook
+                </label>
+                <label>
+                    <input type="checkbox" name="chanel" value="youtube">
+                    Youtube
+                </label>
+                <label>
+                    <input type="checkbox" name="chanel" value="website">
+                    Website
+                </label>
+
+            </div>
+            <div>
+                <label for="lb_comment">Gop y khac: </label><br>
+                <textarea name="comment" id="lb_comment" cols="30" rows="3"></textarea>
+            </div>
+            <button type="submit">Gui</button>
+        </form>
+
+    </main>
+</body>
+
+</html>

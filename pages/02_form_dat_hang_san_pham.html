@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 Form Order</title>
+</head>
+
+<body>
+    <main>
+        <h2>From dat hang san pham</h2>
+        <form action="/order">
+            <fieldset>
+                <legend>Thong tin don hang</legend>
+                <div>
+                    <label for="product">Ten san pham: </label>
+                    <select name="product" id="">
+                        <option value="iphone_15_pro_max">Iphone 15 Pro Max</option>
+                        <option value="iphone_15" selected>Iphone 15</option>
+                        <option value="sony_x1_v">Sony X1-V</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lb_quantity">So luong: </label>
+                    <input type="number" name="lb_quantity" min="1" step="1">
+                </div>
+                <div>
+                    <label for="lb_upload_file">Up load anh thanh toan: </label>
+                    <input type="file">
+                </div>
+            </fieldset>
+            <button type="submit">Dat hang</button>
+        </form>
+    </main>
+</body>
+
+</html>
